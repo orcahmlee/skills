@@ -1,0 +1,5 @@
+interface:
+  display_name: "Commit"
+  short_description: "Stage, write, and sign off a commit"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Explain"
+  short_description: "Explain in depth, to learn rather than to follow"
+policy:
+  allow_implicit_invocation: false
