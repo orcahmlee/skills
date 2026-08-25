@@ -1,0 +1,20 @@
+.DS_Store
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+site/
+
+# Virtual environments
+.venv
+
+# Pytest-generated files
+.pytest_cache
+.coverage
+.coverage.*
+htmlcov/
+allure-results
