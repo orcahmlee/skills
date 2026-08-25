@@ -2,8 +2,6 @@
 
 ## Writing conventions
 
-The global conventions in `~/.claude/CLAUDE.md` apply. This repo settles the one thing they leave open — which documents are Mixed:
-
 - **Mixed** — `README.md`, `CONTEXT.md`, ADRs, planning and roadmap docs. Their reader is the user.
 - **English throughout** — `docs/agents/**`, per the global rule for agent-facing docs.
 
