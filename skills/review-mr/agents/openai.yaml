@@ -1,0 +1,5 @@
+interface:
+  display_name: "Review MR"
+  short_description: "Two-axis code-review of a GitLab merge request"
+policy:
+  allow_implicit_invocation: false
