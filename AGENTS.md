@@ -2,7 +2,7 @@
 
 ## Writing conventions
 
-- **Mixed** — `README.md`, `CONTEXT.md`, ADRs, planning and roadmap docs. Their reader is the user.
+- **Mixed** — `README.md`, `GLOSSARY.md`, ADRs, planning and roadmap docs. Their reader is the user.
 - **English throughout** — `docs/agents/**`, per the global rule for agent-facing docs.
 
 ## Skills
@@ -23,4 +23,4 @@ The five canonical roles, each label string equal to its name: `needs-triage`, `
 
 ### Domain docs
 
-Single-context: one `CONTEXT.md` and one `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+Single-context: one `GLOSSARY.md` and one `docs/adr/` at the repo root. See `docs/agents/domain.md`.
