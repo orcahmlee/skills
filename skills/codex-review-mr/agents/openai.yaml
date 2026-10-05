@@ -1,0 +1,5 @@
+interface:
+  display_name: "Codex Review MR"
+  short_description: "review-mr with its two-axis review run in Codex"
+policy:
+  allow_implicit_invocation: false
