@@ -1,6 +1,6 @@
 ---
 name: review-mr
-description: Run the two-axis code-review against a GitLab merge request, then return to the branch you started on.
+description: Run the two-axis code-review against a GitLab merge request, post the report as an MR note, and return to the branch you started on.
 argument-hint: "The MR number or URL, or nothing for the current branch's MR"
 disable-model-invocation: true
 ---
@@ -12,4 +12,5 @@ Review a merge request with `code-review`. Its diff is always `HEAD` against a f
 3. `git fetch origin`, then `glab mr checkout <iid>`. `HEAD` must then equal `origin/<source_branch>`: fast-forward when behind, stop and report when ahead, since the review covers what the MR shows and nothing more.
 4. Invoke `code-review` with `origin/<target_branch>` as the fixed point. It finds the spec through the `#issue` in the commit messages and the standards through the repo's docs on its own.
 5. Switch back to the recorded branch, whether or not step 4 finished.
-6. Report: the MR (`!iid`, `source → target`), the commits reviewed, the two-axis report verbatim, and the branch you are back on. Offer to post the report as one MR note (`glab mr note <iid> -m`); its readers are the team, so it follows the repo's Mixed rule like any reply. Approve and merge stay the user's to run.
+6. Post the report as one MR note once `code-review` has returned both axes. Write it to a file in the session scratchpad — the MR (`!iid`, `source → target`), the commits reviewed, the two-axis report verbatim — then run `glab mr note create <iid> < <file>`. Its readers are the team, so it follows the repo's Mixed rule like any reply. A review that stopped short posts nothing, and step 7 says why.
+7. Report: the link to the posted note, the report as posted, and the branch you are back on. Approve and merge stay the user's to run.
