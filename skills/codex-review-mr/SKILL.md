@@ -6,7 +6,7 @@ disable-model-invocation: true
 allowed-tools: Bash(codex exec *)
 ---
 
-Run `review-mr` with the argument passed here: read its `SKILL.md`, which sits beside this skill's directory at `../review-mr/SKILL.md`, and do every step yourself except step 4, whose review runs in Codex. Codex's sandbox has no network and no `glab` credentials, so the MR plumbing (resolve, fetch, check out, post, switch back) stays with you, and Codex gets the one step that runs offline.
+Run `review-mr` with the argument passed here: read its `SKILL.md`, which sits beside this skill's directory at `../review-mr/SKILL.md`, and do every step yourself except step 4, whose review runs in Codex, with step 6's stamp adjusted to match. Codex's sandbox has no network and no `glab` credentials, so the MR plumbing (resolve, fetch, check out, post, switch back) stays with you, and Codex gets the one step that runs offline.
 
 Step 4 becomes, in order:
 
@@ -25,6 +25,8 @@ Step 4 becomes, in order:
   ```
 
 - **4d. Take the report.** `<run>/review.md` is step 4's two-axis report, carried verbatim into the steps after it. A `## Blocked` section stays out of the MR note and goes into your report to the user. A run that ended without the two-axis report is a review that stopped short (`<run>/log.txt` says why), so nothing is posted.
+
+Step 6's stamp credits Codex with the review and you with the post: `> *這份 review 由 <codex-model>（Codex）產生，<model> 以這個帳號 post。*`. `<codex-model>` is the `model:` line in the banner atop `<run>/log.txt`, the model the run used once managed config had its say; `<model>` is yours, named as step 6 names it.
 
 ## The approval boundary
 
