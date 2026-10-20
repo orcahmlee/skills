@@ -1,0 +1,5 @@
+interface:
+  display_name: "Brain"
+  short_description: "Search Lessons from past sessions before debugging or choosing an approach"
+policy:
+  allow_implicit_invocation: true
