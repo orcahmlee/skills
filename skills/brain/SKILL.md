@@ -10,7 +10,7 @@ The Brain holds Lessons distilled from the user's past agent sessions. A Lesson 
 1. Search with two to five English keywords: words from the error message, the tool or library names, the operation.
 
    ```bash
-   uv run --quiet --project ~/brain ~/brain/scripts/recall.py <keywords>
+   uv run --quiet --project ~/Brain ~/Brain/scripts/recall.py <keywords>
    ```
 
    No match is a normal result: carry on without the Brain.
