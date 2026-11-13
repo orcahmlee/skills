@@ -1,0 +1,5 @@
+interface:
+  display_name: "Live Deck"
+  short_description: "Build an HTML deck to present live, with keys, speaker notes and one offline file"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,32 @@
+{
+  "title": "Deck title",
+  "lang": "en",
+  "theme": "dark",
+  "file": "deck.html",
+  "slides": [
+    {
+      "layout": "cover",
+      "title": "Deck title",
+      "notes": ["Say why this talk matters to the people in the room."]
+    },
+    {
+      "layout": "content",
+      "title": "One idea per slide",
+      "items": ["First point", "Second point with **one key word**", "Third point"],
+      "notes": ["Walk through the points in order.", "Stop on the key word."]
+    },
+    {
+      "layout": "figure",
+      "title": "A picture carries one claim",
+      "image": "sample.svg",
+      "caption": "The caption states what the picture shows.",
+      "notes": ["Point at the part of the picture that proves the claim."]
+    },
+    {
+      "layout": "embed",
+      "title": "A live page to try on stage",
+      "page": "sample.html",
+      "notes": ["Press the button and show what changes."]
+    }
+  ]
+}

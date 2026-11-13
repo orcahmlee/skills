@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Three bars of rising height">
+  <rect x="200" y="300" width="200" height="180" fill="#5283B0"/>
+  <rect x="500" y="170" width="200" height="310" fill="#5C94CA"/>
+  <rect x="800" y="40" width="200" height="440" fill="#E96C65"/>
+</svg>

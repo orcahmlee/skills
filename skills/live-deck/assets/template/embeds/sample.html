@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sample embedded page</title>
+  <style>
+    :root { color-scheme: dark; background: #1E1E1E; color: #F5F5F5; font: 48px/1.4 system-ui, sans-serif; }
+    body { margin: 0; height: 100vh; display: grid; place-content: center; justify-items: center; gap: 40px; }
+    p { margin: 0; }
+    button { font: inherit; padding: 16px 48px; border: 0; border-radius: 12px; background: #5283B0; color: #FFFFFF; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <p id="count">Pressed 0 times</p>
+  <button type="button" id="press">Press</button>
+  <script>
+    let presses = 0;
+    document.getElementById("press").addEventListener("click", () => {
+      presses += 1;
+      document.getElementById("count").textContent = `Pressed ${presses} times`;
+    });
+  </script>
+</body>
+</html>
