@@ -4,7 +4,7 @@
 
 ## Layout
 
-- `skills/<name>/SKILL.md`：自己寫的 skill，唯一該編輯的地方；旁邊的 `agents/openai.yaml` 是跟 vendored skills 相同形狀的 metadata sidecar。
+- `skills/<name>/SKILL.md`：自己寫的 skill，唯一該編輯的地方；旁邊的 `agents/openai.yaml` 是跟 vendored skills 相同形狀的 metadata sidecar；`assets/` 放 skill 要複製出去的 template。
 - `.agents/skills/`、`.claude/skills/`：從 `mattpocock/skills` vendor 進來的 skills，來源記在 `skills-lock.json`，用 `npx skills@latest update` 更新，不在這裡改。
 - `docs/agents/`：這個 repo 的 issue tracker、triage labels、domain docs 慣例，給 agent 讀。
 
