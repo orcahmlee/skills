@@ -1,5 +1,8 @@
 .DS_Store
 
+# Brand assets that stay out of this public repo
+skills/live-deck/dst-assets/
+
 # Python-generated files
 __pycache__/
 *.py[oc]
